@@ -20,7 +20,7 @@ jobs:
         os: [ubuntu-20.04, macos-latest, windows-latest]
         # see supported versions at
         # https://raw.githubusercontent.com/actions/python-versions/master/versions-manifest.json
-        python-version: [3.5, 3.6, 3.7, 3.8, 3.9, 3.10, 3.11, 3.12]
+        python-version: ["3.5", "3.6", "3.7", "3.8", "3.9", "3.10", "3.11", "3.12"]
         # exclude:
         #   - os: windows-latest
         #     python-version: 2.7  # causes a Shapely install error
