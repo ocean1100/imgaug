@@ -10,7 +10,7 @@ maps in a variety of different ways."""
 
 INSTALL_REQUIRES = [
     "six",
-    "numpy>=1.15",
+    "numpy>=1.15,<2.0",
     "scipy",
     "Pillow",
     "matplotlib",
