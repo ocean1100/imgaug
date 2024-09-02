@@ -57,12 +57,12 @@ def get_install_requirements(main_requires, alternative_requires):
 INSTALL_REQUIRES = get_install_requirements(INSTALL_REQUIRES, ALT_INSTALL_REQUIRES)
 
 setup(
-    name="imgaug",
-    version="0.4.0",
-    author="Alexander Jung",
-    author_email="kontakt@ajung.name",
-    url="https://github.com/aleju/imgaug",
-    download_url="https://github.com/aleju/imgaug/archive/0.4.0.tar.gz",
+    name="imgaug2",
+    version="0.4.1",
+    author="Deyao Yang",
+    author_email="ocean1100@hotmail.com",
+    url="https://github.com/ocean1100/imgaug2",
+    download_url="https://github.com/ocean1100/imgaug/archive/0.4.1.tar.gz",
     install_requires=INSTALL_REQUIRES,
     packages=find_packages(),
     include_package_data=True,
@@ -91,6 +91,10 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
         "Topic :: Scientific/Engineering :: Image Recognition",
         "Topic :: Software Development :: Libraries :: Python Modules"
