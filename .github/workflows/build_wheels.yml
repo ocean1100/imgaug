@@ -17,24 +17,24 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-20.04, macos-latest, windows-latest]
         # see supported versions at
         # https://raw.githubusercontent.com/actions/python-versions/master/versions-manifest.json
-        python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
-        exclude:
-          - os: windows-latest
-            python-version: 2.7  # causes a Shapely install error
+        python-version: ["3.6", "3.7", "3.8", "3.9", "3.10", "3.11", "3.12"]
+        # exclude:
+        #   - os: windows-latest
+        #     python-version: 2.7  # causes a Shapely install error
     env:
       OS: ${{ matrix.os }}
       PYTHON: ${{ matrix.python-version }}
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     # ----------------
     # Install python and base packages
     # ----------------
     - name: Set up python ${{ matrix.python-version }} on ${{ runner.os }}
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
 
